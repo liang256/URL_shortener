@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('input');
 });
 
-Route::get('/{id}',[App\Http\Controllers\LinkController::class,'redirect']);
+Route::get('/link/{id}',[App\Http\Controllers\LinkController::class,'redirect']);
 
-Route::post('/',[App\Http\Controllers\LinkController::class,'store']);
+Route::post('/link',[App\Http\Controllers\LinkController::class,'store']);

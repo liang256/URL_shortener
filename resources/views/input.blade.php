@@ -1,5 +1,5 @@
 <h1>URL shortener</h1>
-<form action="/" method="post">
+<form action="/link" method="post">
 	@csrf
 
 	<input type="text" name="original_address" required>
