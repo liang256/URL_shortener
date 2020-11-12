@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('input');
-});
+})->name('home');
 
-Route::get('/link/{id}',[App\Http\Controllers\LinkController::class,'redirect']);
+Route::get('/link/{link}',[App\Http\Controllers\LinkController::class,'redirect']);
 
 Route::post('/link',[App\Http\Controllers\LinkController::class,'store']);
