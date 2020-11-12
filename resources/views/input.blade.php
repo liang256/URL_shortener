@@ -9,8 +9,8 @@
 @if(isset($link))
 	<div class="result">
 		<p>Result link:<a 
-			href="http://urlshortener.test/{{$link->id}}">
-			http://urlshortener.test/{{$link->id}}</a>
+			href="{{$_SERVER['APP_URL'].'/'.$link->id}}">
+			{{$_SERVER['APP_URL'].'/'.$link->id}}</a>
 		</p>
 	</div>
 @endif
