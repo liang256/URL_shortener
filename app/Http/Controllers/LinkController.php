@@ -8,7 +8,7 @@ use App\Models\Link as Link;
 class LinkController extends Controller
 {
 
-    public function redirect()
+    public function redirect($id)
 	{
 		$id = (trim($_SERVER['REQUEST_URI'],'/'));
 		$address = Link::where('id',$id)->firstOrFail()->original_adress;
